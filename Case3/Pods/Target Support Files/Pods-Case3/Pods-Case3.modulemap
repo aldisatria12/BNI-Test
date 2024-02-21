@@ -1,0 +1,6 @@
+framework module Pods_Case3 {
+  umbrella header "Pods-Case3-umbrella.h"
+
+  export *
+  module * { export * }
+}

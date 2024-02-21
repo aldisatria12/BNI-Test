@@ -1,0 +1,6 @@
+framework module Pods_Case1_Case1UITests {
+  umbrella header "Pods-Case1-Case1UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
