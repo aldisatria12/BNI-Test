@@ -67,7 +67,23 @@ extension SceneDelegate {
         guard let firstUrl = URLContexts.first?.url else {
             return
         }
-
+        
+        if(firstUrl.absoluteString.split(separator: "?")[0] == "sample://transfer/result") {
+            guard let windowScene = (scene as? UIWindowScene) else { return }
+            
+            
+            let router = TransactionRouter.startExecution()
+            let initialViewController = router.entry!
+            
+            let navigation = UINavigationController()
+            navigation.viewControllers = [initialViewController]
+            
+            window = UIWindow(windowScene: windowScene)
+            window?.makeKeyAndVisible()
+            window?.backgroundColor = .systemBackground
+            window?.rootViewController = navigation
+        }
+        
         print(firstUrl.absoluteString)
     }
 }
