@@ -29,6 +29,11 @@
 		3E4FF7482B869784008E22DD /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FF7472B869784008E22DD /* DetailInteractor.swift */; };
 		3E4FF74A2B86978E008E22DD /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FF7492B86978E008E22DD /* DetailPresenter.swift */; };
 		3E4FF74C2B869796008E22DD /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FF74B2B869796008E22DD /* DetailRouter.swift */; };
+		3EA85D522B86E941001CFA15 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA85D512B86E941001CFA15 /* TabBarController.swift */; };
+		3EA85D552B86EC97001CFA15 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA85D542B86EC97001CFA15 /* LineView.swift */; };
+		3EA85D572B86EC9F001CFA15 /* LineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA85D562B86EC9F001CFA15 /* LineInteractor.swift */; };
+		3EA85D592B86ECA9001CFA15 /* LinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA85D582B86ECA9001CFA15 /* LinePresenter.swift */; };
+		3EA85D5B2B86ECB1001CFA15 /* LineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA85D5A2B86ECB1001CFA15 /* LineRouter.swift */; };
 		7C7CF3C3758217196C9BF753 /* Pods_Case3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC27A7A6FD2B236832DFD42 /* Pods_Case3.framework */; };
 		A1780550274C4D358E68EE8D /* Pods_Case3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20DDB4680623DBC5E1064C84 /* Pods_Case3Tests.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +85,11 @@
 		3E4FF7472B869784008E22DD /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		3E4FF7492B86978E008E22DD /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		3E4FF74B2B869796008E22DD /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		3EA85D512B86E941001CFA15 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3EA85D542B86EC97001CFA15 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		3EA85D562B86EC9F001CFA15 /* LineInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineInteractor.swift; sourceTree = "<group>"; };
+		3EA85D582B86ECA9001CFA15 /* LinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePresenter.swift; sourceTree = "<group>"; };
+		3EA85D5A2B86ECB1001CFA15 /* LineRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineRouter.swift; sourceTree = "<group>"; };
 		4807BC1D8EEE6583A2C8E64D /* Pods-Case3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Case3Tests.release.xcconfig"; path = "Target Support Files/Pods-Case3Tests/Pods-Case3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5F9D7204A0D57FE75BE24818 /* Pods-Case3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Case3.debug.xcconfig"; path = "Target Support Files/Pods-Case3/Pods-Case3.debug.xcconfig"; sourceTree = "<group>"; };
 		60619B0CB6E034DC45A1D733 /* Pods-Case3-Case3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Case3-Case3UITests.release.xcconfig"; path = "Target Support Files/Pods-Case3-Case3UITests/Pods-Case3-Case3UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,12 +150,14 @@
 		3E4FF6F92B869036008E22DD /* Case3 */ = {
 			isa = PBXGroup;
 			children = (
+				3EA85D532B86EC84001CFA15 /* LineModule */,
 				3E4FF72D2B8691B7008E22DD /* staticData.json */,
 				3E4FF7372B8695AF008E22DD /* staticMonth.json */,
 				3E4FF7442B8696B8008E22DD /* DetailModule */,
 				3E4FF73B2B869649008E22DD /* HomepageModule */,
 				3E4FF72A2B869041008E22DD /* Entities */,
 				3E4FF6FA2B869036008E22DD /* AppDelegate.swift */,
+				3EA85D512B86E941001CFA15 /* TabBarController.swift */,
 				3E4FF6FC2B869036008E22DD /* SceneDelegate.swift */,
 				3E4FF6FE2B869036008E22DD /* ViewController.swift */,
 				3E4FF7032B869037008E22DD /* Assets.xcassets */,
@@ -202,6 +214,17 @@
 				3E4FF74B2B869796008E22DD /* DetailRouter.swift */,
 			);
 			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		3EA85D532B86EC84001CFA15 /* LineModule */ = {
+			isa = PBXGroup;
+			children = (
+				3EA85D542B86EC97001CFA15 /* LineView.swift */,
+				3EA85D562B86EC9F001CFA15 /* LineInteractor.swift */,
+				3EA85D582B86ECA9001CFA15 /* LinePresenter.swift */,
+				3EA85D5A2B86ECB1001CFA15 /* LineRouter.swift */,
+			);
+			path = LineModule;
 			sourceTree = "<group>";
 		};
 		C2ED9AD43D3AFF9E517787FD /* Pods */ = {
@@ -470,14 +493,19 @@
 				3E4FF6FF2B869036008E22DD /* ViewController.swift in Sources */,
 				3E4FF7412B869678008E22DD /* HomepagePresenter.swift in Sources */,
 				3E4FF6FB2B869036008E22DD /* AppDelegate.swift in Sources */,
+				3EA85D522B86E941001CFA15 /* TabBarController.swift in Sources */,
 				3E4FF7482B869784008E22DD /* DetailInteractor.swift in Sources */,
+				3EA85D5B2B86ECB1001CFA15 /* LineRouter.swift in Sources */,
 				3E4FF7342B86920A008E22DD /* LineChart.swift in Sources */,
 				3E4FF74C2B869796008E22DD /* DetailRouter.swift in Sources */,
 				3E4FF7432B869682008E22DD /* HomepageRouter.swift in Sources */,
+				3EA85D592B86ECA9001CFA15 /* LinePresenter.swift in Sources */,
 				3E4FF7462B86977B008E22DD /* DetailView.swift in Sources */,
 				3E4FF7302B8691F6008E22DD /* Transaction.swift in Sources */,
 				3E4FF73F2B869669008E22DD /* HomepageInteractor.swift in Sources */,
 				3E4FF6FD2B869036008E22DD /* SceneDelegate.swift in Sources */,
+				3EA85D572B86EC9F001CFA15 /* LineInteractor.swift in Sources */,
+				3EA85D552B86EC97001CFA15 /* LineView.swift in Sources */,
 				3E4FF74A2B86978E008E22DD /* DetailPresenter.swift in Sources */,
 				3E4FF73D2B86965D008E22DD /* HomepageView.swift in Sources */,
 				3E4FF7322B8691FF008E22DD /* TransactionDetail.swift in Sources */,

@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
-        window?.rootViewController = navigation
+        window?.rootViewController = TabBarController()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
